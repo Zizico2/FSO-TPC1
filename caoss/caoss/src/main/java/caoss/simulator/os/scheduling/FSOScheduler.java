@@ -70,14 +70,16 @@ public class FSOScheduler implements Scheduler<SchedulingState> {
 		Logger.info("Process " + pcb.pid + ": IO concluded");
 		pcb.getSchedulingState().setQuota(QUOTA);
 		pcb.getSchedulingState().setLevel(0);
+		blockedQueue.remove();
 		if(running != null && running.getState() == RUNNING) {
 			pcb.setState(READY);
-			readyQueues[0].add(blockedQueue.remove());
+			readyQueues[0].add(pcb);
 		}
 		else{
 			pcb.setState(RUNNING);
 			dispatch(pcb, QUANTUM);
 		}
+
 		logQueues();
 	}
 
