@@ -1,0 +1,12 @@
+caoss.simulator
+caoss.simulator.configuration
+caoss.simulator.console
+caoss.simulator.hardware
+caoss.simulator.hardware.devices
+caoss.simulator.instructions
+caoss.simulator.os
+caoss.simulator.os.drivers
+caoss.simulator.os.interrupts
+caoss.simulator.os.scheduling
+caoss.simulator.os.syscalls
+caoss.simulator.parser

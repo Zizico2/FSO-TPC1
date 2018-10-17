@@ -1,0 +1,3 @@
+exec examples/ex1.caoss  examples/ex2.caoss  examples/ex3.caoss  examples/ex4.caoss
+shutdown
+

@@ -1,0 +1,10 @@
+computation 1000
+syscall IO
+syscall IO <10 20 20>
+load 0x12000
+store 0x23224
+loop 400 {
+	computation 10
+	syscall IO <100 10>
+}
+syscall EXIT <0>

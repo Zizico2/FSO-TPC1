@@ -1,0 +1,7 @@
+ computation 1
+ computation 1
+ computation 1
+ computation 1
+ computation 1
+ syscall IO <0>
+ syscall EXIT <0>

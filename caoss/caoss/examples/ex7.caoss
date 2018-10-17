@@ -1,0 +1,9 @@
+loop 1 {
+   computation 1
+ }
+ 
+ loop 1 {
+   computation 1
+ }
+ 
+ syscall EXIT <0>
